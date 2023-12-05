@@ -28,7 +28,7 @@ authRouter.post("/login", async (req, res) => {
       bcrypt.compare(password, user[0].password, (err, result) => {
         if (result) {
           const token = jwt.sign({ userId: user[0]._id }, "revly");
-          res.send({
+          res.cookie("token",token).send({
             msg: "Login Successful",
             token: token,
             user: user[0].name,
