@@ -1,0 +1,26 @@
+.history-wrapper{
+    padding-top: 5rem;
+}
+.history-wrapper h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.history{
+    border-radius: 5px;
+    width: 30%;
+    margin: auto;
+    border: 1px solid gray;
+    text-align: start;
+    padding: 2rem;
+}
+.history li{
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.p-tag{
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
