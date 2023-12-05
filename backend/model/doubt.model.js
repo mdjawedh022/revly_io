@@ -5,7 +5,7 @@ const DoubtSchema = mongoose.Schema(
     name: { type: String, require: true },
     subject: { type: String, require: true },
     doubt: { type: String, require: true },
-    date: { type: String, default: new Date().toLocaleString },
+    date: { type: Date, default: Date.now },
   },
   {
     versionKey: false,
